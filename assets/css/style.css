@@ -286,6 +286,7 @@ ul li {
   display: block;
 }
 .footer {
+  margin: 2px;
   background-color: #222222;
   color: #888888;
 }
@@ -516,7 +517,7 @@ ul li {
 .banner .banner-right .banner-2 .content {
   position: absolute;
   top: 42%;
-  left: 18%;
+  left: 16%;
 }
 .banner .banner-right .banner-2 .content .name {
   color: #616161;
@@ -545,7 +546,7 @@ ul li {
 .banner .banner-right .banner-3 .content {
   position: absolute;
   top: 35%;
-  left: 14%;
+  left: 11%;
 }
 .banner .banner-right .banner-3 .content .name {
   color: #616161;
@@ -612,7 +613,7 @@ ul li {
   border-bottom: 1px solid black;
 }
 .listing {
-  margin-top: 48px;
+  margin-top: 60px;
 }
 .listing .listing-titile .name {
   font-family: "Montserrat", sans-serif;
@@ -645,6 +646,7 @@ ul li {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
+  margin: 18px 0 !important;
 }
 .listing .listing-item .item {
   line-height: 0;
@@ -690,7 +692,7 @@ ul li {
   font-family: 'Open_Sans';
   font-size: 16px;
   padding-top: 10px;
-  font-size: 18px;
+  line-height: 25px;
 }
 .listing .listing-item .des-item .cost del {
   color: #888888;
@@ -703,7 +705,7 @@ ul li {
   margin-top: 14px;
 }
 .news {
-  margin-top: 57px;
+  margin: 50px 0 0 -6px;
 }
 .news .news-event {
   background-image: url("../img/bg-news.jpg");
