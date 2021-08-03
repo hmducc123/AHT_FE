@@ -10,6 +10,7 @@
     cursor: pointer; 
     margin-right: -3px;
     &:hover{
+        .transit(all , .5s);
         transform: scale(1.2);
     -moz-transform: scale(1.2);  
     -ms-transform: scale(1.2);
@@ -98,9 +99,9 @@
     
    
     .menu-doc{
-        padding: 10px;
+
         display: none;
-        background-color: white;
+        background-color: #fff;
         position: fixed;
         width: 30vw;
         right: 0px;
@@ -109,6 +110,7 @@
         
         &.active{
                 z-index: 999;
+            
                 display: block;
             
         }
@@ -121,7 +123,7 @@
     .font-Montserrat(700,14px);
     li{
         padding: 15px;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
     }
     }
 }

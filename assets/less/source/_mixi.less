@@ -3,15 +3,23 @@
     justify-content: space-between;
     align-items: center;
 }
-//font Montserrat  
+  
 .font-Montserrat(@weight,@size){
     font-family: @font-Montserrat;
     font-weight: @weight;
     font-size: @size;
 }
-//font Pacifico
+
 .font-Pacifico(){
     font-family: @font-Pacifico;
+}
+
+.transit (@attr, @sec) {
+    transition: @attr, @sec;
+    -webkit-transition: @attr, @sec;
+    -moz-transition: @attr, @sec;
+    -ms-transition: @attr, @sec;
+    -o-transition: @attr, @sec;
 }
 .col (@width) {
     width: @width;

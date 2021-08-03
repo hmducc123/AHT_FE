@@ -285,17 +285,6 @@ ul li {
 .header .header-bottom .bt-icon .icon-menu:hover .banner .menu-doc {
   display: block;
 }
-@media screen and (max-width: 1200px) {
-  .header .header-bottom .menu {
-    display: none;
-  }
-  .header .header-bottom .bt-icon span .pe-7s-search {
-    display: block;
-  }
-  .header .header-bottom .bt-icon .icon-menu {
-    display: block;
-  }
-}
 .footer {
   background-color: #222222;
   color: #888888;
@@ -441,6 +430,11 @@ ul li {
   margin-right: -3px;
 }
 .btnshop:hover {
+  transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -ms-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -484,6 +478,11 @@ ul li {
   float: right;
 }
 .banner .banner-left .banner-1 .content .btn-shop:hover {
+  transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -ms-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -575,6 +574,11 @@ ul li {
   padding-left: 3px;
 }
 .banner .banner-right .banner-3 .content .btn-shop:hover {
+  transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -ms-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -582,9 +586,8 @@ ul li {
   -webkit-transform: scale(1.2);
 }
 .banner .menu-doc {
-  padding: 10px;
   display: none;
-  background-color: white;
+  background-color: #fff;
   position: fixed;
   width: 30vw;
   right: 0px;
@@ -603,7 +606,7 @@ ul li {
 }
 .banner .menu-doc li {
   padding: 15px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .listing {
   margin-top: 48px;
@@ -812,6 +815,21 @@ ul li {
 .news .news-event .news-content .carousel-indicators li.active {
   width: 12px;
   height: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .header .header-top {
+    display: none;
+  }
+  .header .header-bottom .menu {
+    display: none;
+  }
+  .header .header-bottom .bt-icon span .pe-7s-search {
+    display: block;
+  }
+  .header .header-bottom .bt-icon .icon-menu {
+    display: block;
+    padding-right: 20px;
+  }
 }
 @media screen and (max-width: 700px) {
   .banner .banner-left {
