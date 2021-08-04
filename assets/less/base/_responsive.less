@@ -4,6 +4,7 @@
         display: none;
     }
      .header-bottom{
+         padding: 0 15px;
          .menu{
              display: none;
          }
@@ -26,8 +27,9 @@
 }
 
 @media screen and (max-width: 768px){
-   .banner{
-        .banner-left {
+
+    .banner{
+        .banner-left{
             width: 100%;
         }
         .banner-right {
@@ -73,9 +75,9 @@
             }
             
         }
-   }
-   .product{
-    .col(50%) !important;
+    }
+   .listing .listing-item .product{
+    .col(50%) ;
     }
     .footer{
         .footer-top{
@@ -129,11 +131,14 @@
         .footer-bottom{
             .content{
                 flex-wrap: wrap;
+                row-gap: 20px;
                 .left{
                     margin: auto;
+                    order: 2;
                 }
                 .right{
                     margin: auto;
+                    order: 1;
                 }
             }
         }
@@ -143,6 +148,7 @@
 @media screen and (max-width: 420px){
     .banner{
         &-left{
+            width: 100%;
             .banner-1{
                 .content{
                     .titile{
@@ -151,6 +157,15 @@
                 }
             }
         }
+    }
+    .banner .banner-right .flex .banner-2{
+        width: 100%;
+    }
+    .banner .banner-right .flex .banner-3{
+        width: 100%;
+    }
+    .banner .banner-right .flex .banner-3 .line-image img{
+        position: unset;
     }
 }
 

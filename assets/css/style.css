@@ -97,7 +97,7 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-b';
   src: url("../font/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 700;
 }
@@ -287,7 +287,7 @@ ul li {
   display: block;
 }
 .footer {
-  margin: 2px;
+  padding: 2px;
   background-color: #222222;
   color: #888888;
 }
@@ -499,9 +499,6 @@ ul li {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 25px;
 }
 .banner .banner-right .banner-2 {
   position: relative;
@@ -510,7 +507,6 @@ ul li {
   margin: 15px 0;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 .banner .banner-right .banner-2 .line-image {
   line-height: 0;
@@ -518,7 +514,7 @@ ul li {
 .banner .banner-right .banner-2 .content {
   position: absolute;
   top: 42%;
-  left: 16%;
+  left: 18%;
 }
 .banner .banner-right .banner-2 .content .name {
   color: #616161;
@@ -538,8 +534,7 @@ ul li {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin-top: 30px;
 }
 .banner .banner-right .banner-3 .line-image {
   line-height: 0;
@@ -547,7 +542,7 @@ ul li {
 .banner .banner-right .banner-3 .content {
   position: absolute;
   top: 35%;
-  left: 11%;
+  left: 14%;
 }
 .banner .banner-right .banner-3 .content .name {
   color: #616161;
@@ -592,23 +587,20 @@ ul li {
 }
 .banner .menu-doc {
   display: none;
-  background-color: #fff;
+  background-color: white;
   position: fixed;
   width: 30vw;
   right: 0px;
-  height: 100vh;
+  height: 100vw;
   top: 0px;
-  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
 .banner .menu-doc .navigation {
-  padding: 15px 10px;
-  height: 30px;
+  padding: 10px 15px;
   color: #fff;
   background-color: #8262b5;
-  font-size: 16px;
 }
 .banner .menu-doc.active {
   z-index: 999;
@@ -622,7 +614,7 @@ ul li {
   border-bottom: 1px solid black;
 }
 .listing {
-  margin-top: 58px;
+  margin-top: 48px;
 }
 .listing .listing-titile .name {
   font-family: "Montserrat", sans-serif;
@@ -834,6 +826,9 @@ ul li {
   .header .header-top {
     display: none;
   }
+  .header .header-bottom {
+    padding: 0 15px;
+  }
   .header .header-bottom .menu {
     display: none;
   }
@@ -895,11 +890,11 @@ ul li {
   .banner .banner-right .flex .banner-3 .content .type {
     font-size: 16px;
   }
-  .product {
-    width: 50% !important;
-    padding: 0 15px !important;
-    margin: 15px 0 !important;
-    box-sizing: border-box !important;
+  .listing .listing-item .product {
+    width: 50%;
+    padding: 0 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
   }
   .footer .footer-top .footer-content .footer-top-item {
     width: 100%;
@@ -938,17 +933,32 @@ ul li {
   }
   .footer .footer-bottom .content {
     flex-wrap: wrap;
+    row-gap: 20px;
   }
   .footer .footer-bottom .content .left {
     margin: auto;
+    order: 2;
   }
   .footer .footer-bottom .content .right {
     margin: auto;
+    order: 1;
   }
 }
 @media screen and (max-width: 420px) {
+  .banner-left {
+    width: 100%;
+  }
   .banner-left .banner-1 .content .titile {
     text-align: right;
+  }
+  .banner .banner-right .flex .banner-2 {
+    width: 100%;
+  }
+  .banner .banner-right .flex .banner-3 {
+    width: 100%;
+  }
+  .banner .banner-right .flex .banner-3 .line-image img {
+    position: unset;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -42,21 +42,17 @@
     }
     .banner-right{
         .col(calc(100% / 12 * 4));
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 25px;
         .banner-2{
             position: relative;
             .col(100%);
             margin: 0;
-            padding: 0;
             .line-image{
                 line-height: 0;
             }
             .content{
                 position: absolute;
                     top: 42%;
-                    left: 16%;
+                    left: 18%;
                 .name{
                     color: #616161;
                      letter-spacing: 3px;
@@ -70,15 +66,14 @@
         .banner-3{
             position: relative;
             .col(100%);
-            padding: 0;
-            margin: 0;
+            margin-top: 30px;
             .line-image{
                 line-height: 0;
             }
             .content{
                 position: absolute;
                 top: 35%;
-                left: 11%;
+                left: 14%;
                 .name{
                     color:#616161;
                     .font-Montserrat(600,18px);
@@ -99,30 +94,26 @@
     
    
     .menu-doc{
-
         display: none;
-        background-color: #fff;
+        background-color: white;
         position: fixed;
         width: 30vw;
         right: 0px;
-        height: 100vh;
+        height: 100vw;
         top: 0px;
-        text-transform: uppercase;
+
         .navigation{
-            padding: 15px 10px;
-            height: 30px;
+            padding: 10px 15px;
             color: #fff;
             background-color: @link-color;
-            font-size: 16px;
         }
+        
         &.active{
                 z-index: 999;
-            
                 display: block;
             
         }
         li{
-            
             &:hover{
                 background-color: @link-color;
             }
@@ -136,7 +127,7 @@
     }
 }
 .listing{
-    margin-top: 58px;
+    margin-top: 48px;
     .listing-titile{
         .name{
             .font-Montserrat(700,12px);
