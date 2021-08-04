@@ -392,7 +392,7 @@ ul li {
   color: #888888;
 }
 .footer a:hover {
-  color: #fff !important;
+  color: #fff;
   text-decoration: underline;
 }
 .footer .footer-bottom {
@@ -647,7 +647,7 @@ ul li {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
-  margin: 18px 0 !important;
+  margin: 18px 0;
 }
 .listing .listing-item .item {
   line-height: 0;
