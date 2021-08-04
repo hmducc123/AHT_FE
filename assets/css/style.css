@@ -97,7 +97,7 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Montserrat-b';
+  font-family: 'Montserrat';
   src: url("../font/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 700;
 }
@@ -251,6 +251,7 @@ ul li {
 .header .header-bottom .menu .nav {
   display: flex;
   margin-left: 14px;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -595,11 +596,19 @@ ul li {
   position: fixed;
   width: 30vw;
   right: 0px;
-  height: 100vw;
+  height: 100vh;
   top: 0px;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
+}
+.banner .menu-doc .navigation {
+  padding: 15px 10px;
+  height: 30px;
+  color: #fff;
+  background-color: #8262b5;
+  font-size: 16px;
 }
 .banner .menu-doc.active {
   z-index: 999;
@@ -613,7 +622,7 @@ ul li {
   border-bottom: 1px solid black;
 }
 .listing {
-  margin-top: 60px;
+  margin-top: 58px;
 }
 .listing .listing-titile .name {
   font-family: "Montserrat", sans-serif;
@@ -922,6 +931,10 @@ ul li {
   .header .header-bottom .bt-icon span i {
     padding: 0 !important;
     margin-right: 8px;
+  }
+  .banner .menu-doc {
+    width: 40vw;
+    height: 100vh;
   }
   .footer .footer-bottom .content {
     flex-wrap: wrap;
